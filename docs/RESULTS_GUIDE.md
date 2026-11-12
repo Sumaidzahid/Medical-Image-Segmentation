@@ -8,7 +8,7 @@ The `Models Result/` directory is the repository's record of the model outputs. 
 - Swin UNETR
 - nnU-Net v2
 
-This guide points to those artefacts and transcribes selected values from the committed result files. It does not recalculate metrics, modify plots or introduce new evaluation.
+This guide points to those artefacts and transcribes selected values from the committed result files.
 
 ## 2. U-Net
 

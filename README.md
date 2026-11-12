@@ -51,7 +51,7 @@ The repository includes results for the two recorded U-Net and Swin UNETR folds 
 - Trained model checkpoint files are not included in the repository. Some result metadata records paths from the original Colab or local environment; those paths are historical references, not portable download locations.
 
 
-For the full research rationale, methodology, discussion and limitations, consult the dissertation associated with this project (available demand).
+For the full research rationale, methodology, discussion and limitations, consult the dissertation associated with this project (available on demand).
 
 ## Citation and dataset
 

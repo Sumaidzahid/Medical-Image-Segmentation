@@ -87,8 +87,6 @@ The values above come from different result summaries and evaluation workflows:
 - The recorded work covers two folds, not the complete five-fold plan.
 - Qualitative images are selected examples and should not be interpreted as a quantitative evaluation of every subject.
 
-For these reasons, do not treat the tables above as a newly harmonised benchmark or combine them into a new ranking. The dissertation provides the full methodological context and discussion.
-
 ## 6. Existing result explanation
 
 The repository also includes:

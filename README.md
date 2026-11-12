@@ -28,33 +28,6 @@ The experiments use four MRI modalities: **FLAIR, T1, T1ce and T2**. The segment
 
 The implementation uses a 100-subject subset of the BraTS 2020 training cohort. The recorded experiments cover folds 0 and 1 of a planned five-fold cross-validation setup. The dissertation discusses the dataset, preprocessing, model configurations, evaluation and study limitations in full.
 
-## Repository layout
-
-```text
-.
-├── README.md
-├── LICENSE
-├── docs/
-│   ├── PROJECT_GUIDE.md
-│   ├── RESULTS_GUIDE.md
-│   └── USAGE_GUIDE.md
-├── Models/
-│   ├── MSc_Project_UNET_&_Swin_UNETR.ipynb
-│   ├── MSc_Project_nnUNet.ipynb
-│   ├── msc_project_unet_swin-unetr.py
-│   └── msc_project_nnunet.py
-└── Models Result/
-    ├── UNet/
-    ├── Swin UNETR/
-    ├── nnU-Net results/
-    ├── Models folds summary.py
-    ├── Plot_Results.py
-    ├── Result explanation.md
-    └── save metrics.py
-```
-
-The notebooks and their exported Python files show the implementation. The `Models Result/` directory contains the recorded training logs, metric files, fold summaries, plots and selected qualitative segmentation outputs.
-
 ## Models and implementation
 
 | Model | Implementation |

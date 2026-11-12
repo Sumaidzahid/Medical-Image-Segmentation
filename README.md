@@ -6,7 +6,7 @@ This repository accompanies an MSc dissertation comparing three deep-learning ap
 - **Swin UNETR** — transformer-based encoder with a U-Net-style segmentation decoder.
 - **nnU-Net v2** — self-configuring segmentation framework.
 
-The repository is an archive of the submitted research implementation and its reported outputs. It is intended to make the methodology, implementation notebooks, and existing results accessible. It is **not presented as a packaged software library or a newly validated reproduction**.
+The repository is an archive of the submitted research implementation and its reported outputs. It is intended to make the methodology, implementation notebooks, and existing results accessible.
 
 ## Start here
 
@@ -42,8 +42,6 @@ For the combined notebook, the `UNET` selector determines which of the U-Net or 
 
 The repository includes results for the two recorded U-Net and Swin UNETR folds and the recorded nnU-Net cross-validation output. The nnU-Net summary reports mean Dice values of **0.8989 WT**, **0.8372 TC**, **0.6970 ET**, and **0.8110 foreground**. U-Net and Swin UNETR fold-level best validation Dice values are listed in the [results guide](docs/RESULTS_GUIDE.md), alongside links to the source result files.
 
-These figures are reproduced from the files in this repository; they have not been recalculated for this README. The different result summaries should be read in the context of each model's recorded evaluation workflow, rather than treated as a newly controlled benchmark.
-
 ## Important scope and limitations
 
 - This repository documents the submitted dissertation implementation and its existing outputs.
@@ -51,13 +49,13 @@ These figures are reproduced from the files in this repository; they have not be
 - nnU-Net uses its own automated planning and preprocessing workflow. It is therefore a framework-level comparison, not an architecture-only controlled comparison against the manually configured MONAI models.
 - The notebooks were developed for Google Colab and contain Colab-specific setup, paths and notebook commands. The exported `.py` files are implementation references and are not guaranteed to run as standalone scripts without adaptation.
 - Trained model checkpoint files are not included in the repository. Some result metadata records paths from the original Colab or local environment; those paths are historical references, not portable download locations.
-- No claim is made here that the notebooks have been re-run in a fresh environment.
 
-For the full research rationale, methodology, discussion and limitations, consult the dissertation associated with this project.
+
+For the full research rationale, methodology, discussion and limitations, consult the dissertation associated with this project (available demand).
 
 ## Citation and dataset
 
-The experiments use the BraTS 2020 brain tumour segmentation dataset. Users should obtain the dataset through its authorised distribution and follow the dataset provider's terms and citation requirements. The original notebooks refer to the KaggleHub dataset identifier `awsaf49/brats20-dataset-training-validation`.
+The experiments use the BraTS 2020 brain tumour segmentation dataset. The original notebooks refer to the KaggleHub dataset identifier `awsaf49/brats20-dataset-training-validation`.
 
 ## Licence
 

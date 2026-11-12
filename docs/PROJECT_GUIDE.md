@@ -60,7 +60,7 @@ nnU-Net retains its own automated dataset-adaptive workflow. Its results should 
 
 A practical reading order is:
 
-1. Read the dissertation for the research question, methodology and experimental context.
+1. Read the dissertation for the research question, methodology and experimental context (available on demand).
 2. Open the relevant notebook in `Models/` to follow the implementation in its original notebook format.
 3. Use the exported Python file when you want to search or inspect the code as text.
 4. Open the matching model directory under `Models Result/` to inspect its logs, metrics, plots and qualitative examples.

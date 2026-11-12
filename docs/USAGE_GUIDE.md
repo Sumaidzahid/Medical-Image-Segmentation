@@ -83,6 +83,24 @@ The matching exported source is:
 
 It includes notebook shell commands (for example, lines beginning with `!`) and Colab-specific imports. Do not assume it can be run directly with `python filename.py`.
 
+## 5.1 Class-weight configuration: important distinction
+
+The dissertation specifies different cross-entropy weighting for the two MONAI model paths. This distinction must be preserved when preparing the notebook to run either model.
+
+| Model path | Cross-entropy class weights | Training and validation |
+|---|---|---|
+| U-Net (`UNET = True`) | **Weighted CE** | The class-weight tensor must be added manually to the U-Net cross-entropy loss configuration, following the dissertation. |
+| Swin UNETR (`UNET = False`) | **Unweighted CE** | Do not pass the U-Net class-weight tensor to the Swin UNETR loss in training or validation. |
+| nnU-Net v2 | Native nnU-Net loss setup | It does not use the manually calculated U-Net class weights. |
+
+For U-Net, the dissertation describes calculating class weights from class frequency to address imbalance, particularly the smaller Enhancing Tumour (ET) class. The calculated weights are clamped to a maximum of **5** to avoid excessively large values. The weights apply to the **cross-entropy component** of the combined loss; the documented Dice and cross-entropy balance is **0.7 Dice + 0.3 CE**.
+
+For Swin UNETR, use unweighted cross-entropy. The dissertation explains that class weighting was disabled for this model because it hindered rather than improved its capability. This applies to the Swin UNETR training and validation loss path: do not reuse the U-Net weighted-CE configuration.
+
+The dissertation also notes that this difference means the U-Net and Swin UNETR losses are closely matched but not perfectly loss-controlled. It is part of the reported experimental setup, not a setting to standardise or change.
+
+**Important:** The repository notebook may require you to add the U-Net class-weight tensor manually before running the U-Net path. This guide documents that requirement; it does not modify the notebook or supply invented fixed weight values. Use the calculation and clamping procedure described in the dissertation.
+
 ## 6. nnU-Net v2 notebook
 
 Open:

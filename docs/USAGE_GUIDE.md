@@ -58,7 +58,6 @@ The notebooks expect the BraTS training data to contain subject folders with the
 
 Before running the notebooks:
 
-- Ensure you have legitimate access to the dataset and comply with its terms.
 - Ensure the runtime has enough disk space for the dataset and intermediate files.
 - Ensure the runtime has sufficient RAM and GPU memory for 3D volumes and model operations.
 - Review the notebook's data paths and access requirements for your own runtime.

@@ -4,8 +4,6 @@
 
 This repository contains the implementation artefacts and recorded outputs for an MSc dissertation on deep-learning-based 3D brain tumour segmentation. It compares U-Net, Swin UNETR and nnU-Net v2 on the BraTS 2020 dataset.
 
-The repository is intended to expose the submitted implementation and the results that accompany it. It is not a packaged application, and its contents should be interpreted alongside the dissertation.
-
 ## 2. Dataset and task
 
 The notebooks obtain the BraTS 2020 training/validation dataset through KaggleHub using the identifier:
